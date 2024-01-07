@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "LayMatKhau";
+}
+
+<style>
+
+    .container {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+    }
+
+    .form-item {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .text-danger {
+        color: #dc3545;
+    }
+
+    .btn {
+        background-color: #007bff;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+    /* Thêm các điều chỉnh để tối ưu hóa định dạng của form */
+    .form-row {
+        margin-bottom: 15px;
+    }
+
+
+    /* Định dạng cho button trong trường hợp cụ thể */
+    .btn-submit {
+        background-color: #28a745;
+    }
+
+</style>
+<h1>Lấy mật khẩu</h1>
+
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <form asp-action="LayMatKhau" asp-controller="KhachHang" method="post">
+            <div class="text-danger" asp-validation-summary="All"></div>
+
+            <div class="form-row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="form-item w-100">
+                        <label class="form-label my-3">Mật khẩu mới</label><sup>*</sup>
+                        <input class="form-control" name="">
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="form-item w-100">
+                        <label class="form-label my-3">Email</label><sup>*</sup>
+                        <input class="form-control" name="Xác nhận mật khẩu mới">
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-wrapper">
+                <button type="submit" class="btn btn-submit py-3 px-4 text-uppercase">Gửi</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

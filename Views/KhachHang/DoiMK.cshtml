@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "DoiMK";
+    Layout = null;
+}
+
+<style>
+    h4 {
+        color: black;
+        margin-bottom: 50px;
+    }
+
+    .personal__account-security .item {
+        border-bottom: 1px solid #ccc; /* Chọn màu và kích thước border phù hợp */
+        padding-bottom: 10px; /* Điều chỉnh khoảng cách giữa border và nội dung */
+    }
+
+    .col-lg-9, .col-md-9, .col-sm-9, .name {
+        color: black;
+    }
+
+    .item .button-change {
+        float: right;
+    }
+
+    /* Điều chỉnh khoảng cách giữa các mục */
+    .item {
+        margin-bottom: 20px;
+    }
+
+    .nav-item .nav-link {
+        color: gray;
+    }
+
+    /* Thay đổi màu chữ của nút "Đăng xuất tài khoản" */
+    .nav-link, .label {
+        color: gray;
+    }
+
+    .nav-item .nav-link:hover {
+        color: black;
+    }
+
+    .label .info {
+        color: black;
+        margin-left: 50px;
+    }
+
+
+    /* Thay đổi màu chữ khi hover trên nút "Đăng xuất tài khoản" */
+    .nav-link:hover {
+        color: #000; /* Màu chữ khi hover */
+        background-color: #f2f2f2; /* Màu nền khi hover */
+    }
+
+    /* Màu chữ khi đã chọn trên thanh điều hướng */
+    .nav-link.active {
+        color: #000;
+    }
+
+    .btn {
+        background-color: #007bff;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+    /* Thêm các điều chỉnh để tối ưu hóa định dạng của form */
+    .form-row {
+        margin-bottom: 15px;
+    }
+
+
+    /* Định dạng cho button trong trường hợp cụ thể */
+    .btn-submit {
+        background-color: #28a745;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row" style="min-height: 500px;">
+
+        <!-- Phần bên phải (80%) -->
+        <form method="post" asp-controller ="KhachHang" asp-action="DoiMK">
+            <p>@TempData["Message"]</p>
+            <div id="container1" class="col-lg-9 col-md-9 col-sm-9">
+                <div class="personal__account-security container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-item w-100">
+                                <label class="form-label my-3">Mật khẩu hiện tại</label><sup>*</sup>
+                                <input class="form-control" name="MatKhauCu">
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-item w-100">
+                                <label class="form-label my-3">Mật khẩu mới</label><sup>*</sup>
+                                <input class="form-control" name="MatKhauMoi">
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-item w-100">
+                                <label class="form-label my-3">Xác nhận khẩu mới</label><sup>*</sup>
+                                <input class="form-control" name="ConfirmMK">
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="btn-wrapper">
+                            <button type="submit" class="btn btn-submit py-3 px-4 text-uppercase">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,122 @@
+﻿@using ThuongMaiDT.Models;
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<HoaDon>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "DonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Đơn hàng</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr class="table-warning">
+            <th>
+                Ngày đặt
+            </th>
+            <th>
+                Họ tên
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Số điện thoại
+            </th>
+            <th>
+                Cách thanh toán
+            </th>
+            <th>
+                Cách vận chuyển
+            </th>
+            <th>
+                Phí vận chuyển
+            </th>
+            <th>
+                Ghi chú
+            </th>
+            <th>
+                Trạng thái
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int i = 0;
+            string @cls = "table-success";
+        }
+        @foreach (var item in Model)
+        {
+            i = i + 1;
+            cls = "table-success";
+            if (i % 2 == 0)
+            {
+                cls = "table-primary";
+            }
+            <tr class="@cls">
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CachThanhToan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CachVanChuyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhiVanChuyen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GhiChu)
+            </td>
+            <td>
+                    @if(item.MaTrangThai == -1)
+                    {
+                        <span>Khách hàng đã hủy đơn hàng</span>
+                    }
+                    else if(item.MaTrangThai == 0)
+                    {
+                        <span>Mới đặt hàng</span>
+                    }
+                    else if(item.MaTrangThai == 1)
+                    {
+                        <span>Đã thanh toán</span>
+                    }
+                    else if(item.MaTrangThai == 2)
+                    {
+                        <span>Chờ giao hàng</span>
+                    }
+                    else
+                    {
+                        <span>Đã giao hàng</span>
+                    }
+                </td>
+            <td>
+                <a asp-action="UpdateDonHang" asp-route-mahd="@item.MaHd">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MaHd">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaHd">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div style="margin: 0 auto">
+    @Html.PagedListPager(Model,page => Url.Action("DonHang",new {page=page}),new X.PagedList.Web.Common.PagedListRenderOptions(){
+    LiElementClasses = new List<String> {"page-item"},
+    PageClasses = new List<String> {"page-link"}
+    })
+</div>

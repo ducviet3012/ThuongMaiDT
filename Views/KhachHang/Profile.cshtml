@@ -1,0 +1,168 @@
+﻿@model ThuongMaiDT.Models.KhachHang
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<style>
+    h4 {
+        color: black;
+        margin-bottom: 50px;
+    }
+
+    .personal__account-security .item {
+        border-bottom: 1px solid #ccc; /* Chọn màu và kích thước border phù hợp */
+        padding-bottom: 10px; /* Điều chỉnh khoảng cách giữa border và nội dung */
+    }
+
+    .col-lg-9, .col-md-9, .col-sm-9, .name {
+        color: #fff;
+    }
+
+    .item .button-change {
+        float: right;
+    }
+
+    /* Điều chỉnh khoảng cách giữa các mục */
+    .item {
+        margin-bottom: 20px;
+    }
+
+    .nav-item .nav-link {
+        color: gray;
+    }
+
+    /* Thay đổi màu chữ của nút "Đăng xuất tài khoản" */
+    .nav-link, .label {
+        color: gray;
+    }
+
+    .nav-item .nav-link:hover {
+        color: black;
+    }
+
+    .label .info {
+        color: black;
+        margin-left: 50px;
+    }
+
+
+    /* Thay đổi màu chữ khi hover trên nút "Đăng xuất tài khoản" */
+    .nav-link:hover {
+        color: #000; /* Màu chữ khi hover */
+        background-color: #f2f2f2; /* Màu nền khi hover */
+    }
+
+    /* Màu chữ khi đã chọn trên thanh điều hướng */
+    .nav-link.active {
+        color: #000;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#DoiMK").click(function () {
+            console.log("OK");
+            DoiMatKhau();
+        });
+    });
+
+    function DoiMatKhau() {
+        $.ajax({
+            type: "GET",
+            url: "/KhachHang/DoiMK",
+            success: function (result) {
+                $('#container').html(result);
+            },
+            error: function (error) {
+                console.error("Error:", error);
+            }
+        });
+    }
+</script>
+<div class="container-fluid">
+    <div class="row" style="min-height: 500px;">
+        <!-- Phần bên trái (20%) -->
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="p-3">
+                <h4>Thông tin người dùng</h4>
+                <div style="border:1px solid; margin-bottom: 20px;"></div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active">Thông tin cá nhân</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Lịch sử mua hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="DoiMK">Đổi mật khẩu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="DangXuat" class="nav-link">Đăng xuất tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        @{
+            var khachHang = ViewBag.KhachHang as ThuongMaiDT.Models.KhachHang;
+            <!-- Phần bên phải (80%) -->
+            <div id="container" class="col-lg-9 col-md-9 col-sm-9">
+                <div class="personal__account-security container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="item">
+                                <span class="label">Tên đăng nhập <span class="info">@khachHang.MaKh</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="item">
+                                <span class="label">Mật Khẩu<span class="info">********</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="item">
+                                <span class="label">Họ tên<span class="info">@khachHang.HoTen</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="item">
+                                <span class="label">
+                                    Giới tính<span class="info">
+                                        @{
+                                            if (khachHang.GioiTinh == true)
+                                            {
+                                                <text>Nam</text>
+                                            }
+                                            else
+                                            {
+                                                <text>Nữ</text>
+                                            }
+                                        }
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="item">
+                                <span class="label">Địa chỉ<span class="info">@khachHang.DiaChi</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="item">
+                                <span class="label">E-mail <span class="info">@khachHang.Email</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="item">
+                                <span class="label">Số điện thoại <span class="info">@khachHang.DienThoai</span></span>
+                                <div class="button-change">Thay đổi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+       
+    </div>
+</div>

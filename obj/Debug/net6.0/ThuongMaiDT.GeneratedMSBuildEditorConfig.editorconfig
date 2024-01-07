@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ThuongMaiDT
+build_property.RootNamespace = ThuongMaiDT
+build_property.ProjectDir = d:\ASP.Net\ThuongMaiDT\ThuongMaiDT\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = d:\ASP.Net\ThuongMaiDT\ThuongMaiDT
+build_property._RazorSourceGeneratorDebug = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Areas/Admin/Views/HomeAdmin/DonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERvbkhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Areas/Admin/Views/HomeAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Areas/Admin/Views/HomeAdmin/KhachHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEtoYWNoSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Areas/Admin/Views/HomeAdmin/UpdateDonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFVwZGF0ZURvbkhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Cart/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja091dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Cart/PaymentFail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxQYXltZW50RmFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Cart/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/HangHoa/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/HangHoa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/HangHoa/ProductItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxQcm9kdWN0SXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/HangHoa/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Home/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/KhachHang/DangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdLeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/KhachHang/DangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERhbmdOaGFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/KhachHang/DoiMK.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERvaU1LLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/KhachHang/LayMatKhau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXExheU1hdEtoYXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/KhachHang/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/KhachHang/QuenMatKhau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXFF1ZW5NYXRLaGF1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/Components/Cart/CartPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0UGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/Components/MenuLoai/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_DanhSachHangHoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYW5oU2FjaEhhbmdIb2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_LayoutDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_LayoutHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_LayoutMail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_TimKiemPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UaW1LaWVtUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ASP.Net/ThuongMaiDT/ThuongMaiDT/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q44xl2dgt2
